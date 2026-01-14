@@ -219,7 +219,7 @@ jobs:
 
       - name: Configure kubectl via AWS CLI
         run: |
-          CLUSTER_NAME=${{ steps.resolve.outputs.env-name }}-dominion-cluster
+          CLUSTER_NAME=${{ steps.resolve.outputs.env-name }}-ariel-cluster
           aws eks update-kubeconfig --region $AWS_REGION --name "$CLUSTER_NAME"
 
       - name: Verify EKS Access
