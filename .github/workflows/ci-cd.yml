@@ -37,6 +37,10 @@ jobs:
       image-tag: ${{ steps.set-tag.outputs.image-tag }}
 
     steps:
+      - name: Pre-clean workspace (fix permissions)
+        run: |
+         sudo chown -R ubuntu:ubuntu $GITHUB_WORKSPACE || true
+         sudo rm -rf $GITHUB_WORKSPACE/.scannerwork || true
       - name: Checkout Source
         uses: actions/checkout@v3
 
@@ -168,6 +172,10 @@ jobs:
     needs: build-and-push
 
     steps:
+      - name: Pre-clean workspace (fix permissions)
+        run: |
+         sudo chown -R ubuntu:ubuntu $GITHUB_WORKSPACE || true
+         sudo rm -rf $GITHUB_WORKSPACE/.scannerwork || true
       - name: Checkout Repo
         uses: actions/checkout@v3
 
