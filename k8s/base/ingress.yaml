@@ -7,7 +7,7 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:812490741290:certificate/c4da3703-c39a-4ac4-a429-74e93e24b9b6
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-2:814817357907:certificate/003154cc-57e6-46eb-8e69-21cd14295c69
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
     alb.ingress.kubernetes.io/healthcheck-path: "/actuator/health"
@@ -15,7 +15,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: app.beautanica.net
+  - host: app.esiabeauty.com
     http:
       paths:
       - path: /

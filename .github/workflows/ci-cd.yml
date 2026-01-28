@@ -25,7 +25,7 @@ on:
 env:
   AWS_REGION: us-east-2
   # Fallback if account-id secrets are absent (still overridden by STS below)
-  AWS_ACCOUNT_ID: 812490741290
+  AWS_ACCOUNT_ID: 814817357907
   ECR_REPO: fintech-app
 
 jobs:

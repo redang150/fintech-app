@@ -1,11 +1,11 @@
 #!/bin/bash
 #
 # === CONFIGURATION ===
-AWS_ACCOUNT_ID="812490741290"
+AWS_ACCOUNT_ID="814817357907"
 AWS_REGION="us-east-2"
 ECR_REPO_NAME="fintech-app"
 EKS_NAMESPACE="fintech"
-DOMAIN_NAME="beautanica.net"
+DOMAIN_NAME="esiabeauty.com"
 APP_PORT=8080
 
 # === GO TO PROJECT ROOT ===
