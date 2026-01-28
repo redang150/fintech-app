@@ -227,7 +227,7 @@ jobs:
 
       - name: Configure kubectl via AWS CLI
         run: |
-          CLUSTER_NAME=${{ steps.resolve.outputs.env-name }}-ariel-cluster
+          CLUSTER_NAME=${{ steps.resolve.outputs.env-name }}-fintech
           aws eks update-kubeconfig --region $AWS_REGION --name "$CLUSTER_NAME"
 
       - name: Verify EKS Access
